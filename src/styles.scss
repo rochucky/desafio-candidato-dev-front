@@ -9,3 +9,10 @@ body, html {
 * {
   box-sizing: border-box;
 }
+
+a {
+  display: block;
+  padding: .5rem .3rem;
+  text-decoration: none;
+  color: white;
+}

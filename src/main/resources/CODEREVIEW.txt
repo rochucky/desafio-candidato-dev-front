@@ -1,0 +1,4 @@
+- Virgula faltando no AppComponent - Linha 15;
+- De primeira da pra percebar mal alinhamento dos cards na tela;
+- Toda a lógica está em um componente só. Dividi em mais componentes, isso melhora a manutenção e entendimento;
+- Falta de padronização de Idioma (Ingles/Portugues);

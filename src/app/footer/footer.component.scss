@@ -1,0 +1,25 @@
+#footer {
+  background-color: green;
+  padding: 1rem 20%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  color: white;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 1rem;
+}
+
+#social-icones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
