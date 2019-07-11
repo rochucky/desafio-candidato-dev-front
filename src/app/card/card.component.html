@@ -2,20 +2,20 @@
   <button class="button">PEÇA JÁ A SUA <img src="/assets/icon-arrow-right.svg"></button>
   <div>
     <div>
-      <img src="{{item.maquininha}}">
+      <img src="assets/{{item.modelo.toLowerCase()}}-2.png">
     </div>
     <div>
-      <h4>{{item.title}}</h4>
+      <h4>{{item.modelo}}</h4>
       <div>
         <p>
-          {{item.parcelas}}x R$ {{item.valorParcela}}
+          12 x R$ {{item.preco / 12}}
         </p>
         <p>
-          à vista por R$ {{item.totalPrice}}
+          à vista por R$ {{item.temDesconto ? item.precoComDesconto : item.preco }}
         </p>
       </div>
       <p>
-        {{item.description}}
+        {{item.descricao}}
       </p>
     </div>
   </div>
