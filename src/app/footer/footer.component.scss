@@ -1,25 +1,123 @@
-#footer {
-  background-color: green;
-  padding: 1rem 20%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: white;
+@media screen and (min-width: 768px) {
+  #footer {
+    background-color: green;
+    padding: 1rem 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    padding-top: 50px;
+
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      li {
+        a:link, a:visited, a:hover, a:active {
+          font-size: 15px;
+          color: #FFF;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+
+  #footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-top {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 22px;
+
+    > p {
+      line-height: 100%;
+      margin: 10px 0 10px 0;
+    }
+  }
+
+  #social-icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
-#footer ul {
-  list-style: none;
-  padding: 0;
-}
+@media screen and (max-width: 768px) {
+  .footer-top {
+    display: none;
+  }
 
-.footer-top {
-  background-color: #e0e0e0;
-  text-align: center;
-  padding: 1rem;
-}
+  #footer {
+    background-color: green;
+    color: white;
 
-#social-icones {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    .row {
+      border-bottom: 1px solid white;
+      padding: 10px 15px 10px 15px;
+      overflow: hidden;
+      .menu-title {
+        h4.text {
+          float: left;
+        }
+        h4.icon{
+          float: right;
+        }
+      }
+
+      .menu-title.active {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      }
+
+      .logo {
+        float: left;
+      }
+      .social {
+        float: right;
+      }
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    ul {
+      li {
+        
+        list-style-type: none;
+
+        a:link, a:visited, a:hover, a:active {
+          font-size: 15px;
+          color: #FFF;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .mx-auto {
+      float: left;
+    }
+
+    h4 {
+      line-height: 100%;
+      margin: 10px 0 10px 0;
+    }
+    .links {
+      max-height: 160px;
+      transition: max-height 0.3s ease-in-out;
+    }
+    .hidden-list {
+      max-height: 0px;
+      margin-top: 0px;
+      pointer-events: none;
+    }
+  }
 }

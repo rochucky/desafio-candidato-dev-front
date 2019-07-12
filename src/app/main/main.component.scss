@@ -1,8 +1,27 @@
 .main {
-  padding: 1rem 20%;
+	margin-top: 20px;
 }
 
-.main h1, 
-.main p {
-  text-align: center;
+.main-title{
+		
+	}
+	h1 {
+		font-size: 16pt;
+	}
+	p {
+		font-size: 10pt;
+		color: #848484;
+	}
+
+@media screen and (min-width: 768px) {
+	.main-title{
+		padding: 0 20%;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 14px;
+		color: #848484;
+	}
 }

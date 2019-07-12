@@ -45,9 +45,30 @@ export class FooterComponent implements OnInit {
     }
   ];
 
+  public innerWidth: any;
+  public list_trust: boolean = false;
+  public list_fycompany: boolean = false;
+  public list_truster: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
+  }
+
+  collapse(evt, elm, item) {
+    switch(item){
+      case 'trust':
+        this.list_trust = this.list_trust ? false : true;
+        break;
+      case 'fycompany':
+        this.list_fycompany = this.list_fycompany ? false : true;
+        break;
+      case 'truster':
+        this.list_truster = this.list_truster ? false : true;
+        break;
+    }
+    window.scroll(0,document.body.scrollHeight);
   }
 
 }

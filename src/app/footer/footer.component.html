@@ -2,8 +2,7 @@
   <p>Trust é tudo, menos banco. Soluções financeiras 100% digitais e integradas</p>
 </div>
 
-<div id="footer">
-
+<div *ngIf="innerWidth > 768" id="footer" class="row">
   <div>
     <h4>Trust</h4>
     <ul>
@@ -26,7 +25,7 @@
     <h4>Seja um Truster!</h4>
     <ul>
       <li>
-        <a title="Franquias">Franquias</a>
+        <a title="Franquias" href="">Franquias</a>
       </li>
     </ul>
   </div>
@@ -47,6 +46,64 @@
         <img src="/assets/icon-instagram.svg">
       </a>
       <a title="Fale conosco" href="mailto:email@email.com">
+        <img src="/assets/icon-email.svg">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="innerWidth < 768" id="footer">
+  <div class="row">
+    <div class="col-sm-12 col-12 menu-title" (click)="collapse($event, item, 'trust')" [ngClass]="{'active': list_trust}">
+      <h4 class="text-bold text">Trust</h4>
+      <h4 class="icon">{{ list_trust ? '-' : '+' }}</h4>
+    </div>
+    <div class="col-sm-12 col-12 links" [ngClass]="{'hidden-list': !list_trust}">
+      <ul class="p-0">
+        <li *ngFor="let item of trustFooterLinks"><a href="{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-12 menu-title" (click)="collapse($event, item, 'fycompany')" [ngClass]="{'active': list_fycompany}">
+      <h4 class="text-bold text">Para Sua Empresa</h4>
+      <h4 class="icon">{{ list_fycompany ? '-' : '+' }}</h4>
+    </div>
+    <div class="col-sm-12 col-12 links" [ngClass]="{'hidden-list': !list_fycompany}">
+      <ul class="p-0">
+        <li *ngFor="let item of ForYourCompany"><a href="{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-12 menu-title" (click)="collapse($event, item, 'truster')" [ngClass]="{'active': list_truster}">
+      <h4 class="text-bold text">Seja um Truster!</h4>
+      <h4 class="icon">{{ list_truster ? '-' : '+' }}</h4>
+    </div>
+    <div class="col-sm-12 col-12 links" [ngClass]="{'hidden-list': !list_truster}">
+      <ul class="p-0">
+        <li><a href="" title="Franquias">Franquias</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-12">
+      <a title="Trusthub" class="logo">
+        <img src="/assets/trust-white.svg">
+      </a>
+      <a title="Facebook" href="https://www.facebook.com" class="social">
+        <img src="/assets/icon-facebook.svg">
+      </a>
+      <a title="Linkedin" href="https://br.linkedin.com/" class="social">
+        <img src="/assets/icon-linkedin.svg">
+      </a>
+      <a title="Instagram" href="https://www.instagram.com" class="social">
+        <img src="/assets/icon-instagram.svg">
+      </a>
+      <a title="Fale conosco" href="mailto:email@email.com" class="social">
         <img src="/assets/icon-email.svg">
       </a>
     </div>

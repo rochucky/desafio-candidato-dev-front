@@ -1,23 +1,62 @@
-<div class="card">
-  <button class="button">PEÇA JÁ A SUA <img src="/assets/icon-arrow-right.svg"></button>
-  <div>
-    <div>
-      <img src="assets/{{item.modelo.toLowerCase()}}-2.png">
-    </div>
-    <div>
-      <h4>{{item.modelo}}</h4>
-      <div>
-        <p>
-          12 x R$ {{item.preco / 12}}
-        </p>
-        <p>
-          à vista por R$ {{item.temDesconto ? item.precoComDesconto : item.preco }}
-        </p>
+
+  <div class="card">
+    <button class="button">
+      <div class="row">
+        <div class="col-sm-8 col-8 text-left">
+          PEÇA JÁ A SUA 
+        </div>
+        <div class="col-sm-4 col-4 text-right">
+          <img src="/assets/icon-arrow-right.svg">
+        </div>  
       </div>
-      <p>
-        {{item.descricao}}
-      </p>
+    </button>
+    <div class="row item">
+      <div class="col-md-5">
+        <img src="assets/{{item.modelo.toLowerCase()}}-2.png">
+      </div>
+      <div class="col-md-7 text-left price">
+        <div class="row">
+          <div class="col-md-12">
+            <h4>{{item.modelo}}</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-4 font-green parcels">
+            <p>
+              12x<br>
+              R$
+            </p>
+          </div>
+          <div class="col-md-8 col-sm-8 col-8 font-green parcel-price text-left">
+            <p>
+               {{item.preco / 12}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 font-green discount-price">
+            <p>
+              à vista por R$ {{item.temDesconto ? item.precoComDesconto : item.preco }}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="row description text-left">
+      <div class="col">
+        <p>
+          {{item.descricao}}
+        </p>        
+      </div>
+    </div>
+    <button class="button">
+      <div class="row">
+        <div class="col-sm-8 col-8 text-left">
+          PEÇA JÁ A SUA 
+        </div>
+        <div class="col-sm-4 col-4 text-right">
+          <img src="/assets/icon-arrow-right.svg">
+        </div>  
+      </div>
+    </button>
   </div>
-  <button class="button">PEÇA JÁ A SUA <img src="/assets/icon-arrow-right.svg"></button>
-</div>

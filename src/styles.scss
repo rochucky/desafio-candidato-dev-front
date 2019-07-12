@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 body, html {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', Verdana;
+  font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -15,4 +16,14 @@ a {
   padding: .5rem .3rem;
   text-decoration: none;
   color: white;
+}
+
+.font-green {
+  color: #4EA854;
+}
+
+@media screen and (min-width: 600px) {
+	.container-fluid {
+		padding: 0 20%;
+	}
 }

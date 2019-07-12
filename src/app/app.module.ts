@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { HttpService } from './app.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -24,7 +25,8 @@ import { HttpService } from './app.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
