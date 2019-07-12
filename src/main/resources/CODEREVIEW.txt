@@ -8,3 +8,5 @@
 
 - Programei o roteamento para todos os links mas deixei eles com uma pagina "Em manutenção".
 - Após realizado todo o projeto verifiquei que não fiz a lógica para o botão "Peça já a sua". Mas seria o mesmo que os links do footer.
+
+- Feito tratamento de erros na requisição http. ele só está tratando o 404, pois é o que eu conseguia simular, mas olhando a logica da pra ver o quão facil será para adicionar outros erros na lógica.
