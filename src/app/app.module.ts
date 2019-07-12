@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 
 import { HttpService } from './app.service';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { FranquiasComponent } from './franquias/franquias.component';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 
 
@@ -21,12 +24,15 @@ import { AppRoutingModule } from './app-routing.module';
     CardListComponent,
     MainComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    FranquiasComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

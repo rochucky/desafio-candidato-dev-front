@@ -10,38 +10,38 @@ export class FooterComponent implements OnInit {
 	public trustFooterLinks = [
     {
       text: 'Videos',
-      url: ''
+      url: 'videos'
     },
     {
       text: 'Trust na Mídia',
-      url: ''
+      url: 'trust-na-midia'
     },
     {
       text: 'Assessoria de Imprensa',
-      url: ''
+      url: 'assessoria-de-imprensa'
     },
     {
       text: 'Política de Privacidade',
-      url: ''
+      url: 'politica-de-privacidade'
     }
   ];
 
   public ForYourCompany = [
     {
       text: 'Crédito em Dobro',
-      url: ''
+      url: 'credito-em-dobro'
     },
     {
       text: 'Conta de Pagamento Digital',
-      url: ''
+      url: 'conta-de-pagamento-digital'
     },
     {
       text: 'Empréstimos',
-      url: ''
+      url: 'emprestimos'
     },
     {
       text: 'Antecipação de Duplicatas',
-      url: ''
+      url: 'antecipacao-de-duplicatas'
     }
   ];
 

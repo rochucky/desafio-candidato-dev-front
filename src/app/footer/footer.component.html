@@ -7,7 +7,7 @@
     <h4>Trust</h4>
     <ul>
       <li *ngFor="let item of trustFooterLinks">
-        <a title="{{item.text}}" href="{{item.url}}">{{item.text}}</a>
+        <a title="{{item.text}}" routerLink="/{{item.url}}">{{item.text}}</a>
       </li>
     </ul>
   </div>
@@ -16,7 +16,7 @@
     <h4>Para sua empresa</h4>
     <ul>
       <li *ngFor="let item of ForYourCompany">
-        <a title="{{item.text}}" href="{{item.url}}">{{item.text}}</a>
+        <a title="{{item.text}}" routerLink="/{{item.url}}">{{item.text}}</a>
       </li>
     </ul>
   </div>
@@ -25,7 +25,7 @@
     <h4>Seja um Truster!</h4>
     <ul>
       <li>
-        <a title="Franquias" href="">Franquias</a>
+        <a title="Franquias" routerLink="/franquias">Franquias</a>
       </li>
     </ul>
   </div>
@@ -60,7 +60,7 @@
     </div>
     <div class="col-sm-12 col-12 links" [ngClass]="{'hidden-list': !list_trust}">
       <ul class="p-0">
-        <li *ngFor="let item of trustFooterLinks"><a href="{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
+        <li *ngFor="let item of trustFooterLinks"><a routerLink="/{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
       </ul>
     </div>
   </div>
@@ -72,7 +72,7 @@
     </div>
     <div class="col-sm-12 col-12 links" [ngClass]="{'hidden-list': !list_fycompany}">
       <ul class="p-0">
-        <li *ngFor="let item of ForYourCompany"><a href="{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
+        <li *ngFor="let item of ForYourCompany"><a routerLink="/{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
       </ul>
     </div>
   </div>
@@ -84,7 +84,7 @@
     </div>
     <div class="col-sm-12 col-12 links" [ngClass]="{'hidden-list': !list_truster}">
       <ul class="p-0">
-        <li><a href="" title="Franquias">Franquias</a></li>
+        <li><a routerLink="/franquias" title="Franquias">Franquias</a></li>
       </ul>
     </div>
   </div>
