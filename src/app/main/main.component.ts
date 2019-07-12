@@ -10,14 +10,22 @@ import { HttpService } from '../app.service';
 export class MainComponent implements OnInit {
 
 	public plans: any[];
+  public ApiError: any = {
+    error: 0,
+    message: ''
+  };
 
   constructor(private http: HttpService) { }
 
   ngOnInit() {
   	this.http.setUrl('https://zuul.trusthub.com.br/trusthub-subadquirencia-ecommerce/public-services/produtos/TH_REC_ANT');
-  	this.http.get().subscribe((data => {
-  		this.plans = data;
-  	}));
+  	this.http.get().subscribe(
+      (data) => {
+  		  this.plans = data;
+  	  },
+      (error) => {
+        this.ApiError = this.http.handle(error);
+      });
   }
 
 }

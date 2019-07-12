@@ -2,3 +2,9 @@
 - De primeira da pra percebar mal alinhamento dos cards na tela;
 - Toda a lógica está em um componente só. Dividi em mais componentes, isso melhora a manutenção e entendimento;
 - Falta de padronização de Idioma (Ingles/Portugues);
+- Instalei o bootstrap e alterei todo o layout para ficar conforme o arquivo XD.
+
+- Sobre o footer. Eu fiz toda a lógica na mão... Poderia sim ter pego algo pronto na web, mas acredito que a avaliação é sobre o que eu consigo fazer.
+
+- Programei o roteamento para todos os links mas deixei eles com uma pagina "Em manutenção".
+- Após realizado todo o projeto verifiquei que não fiz a lógica para o botão "Peça já a sua". Mas seria o mesmo que os links do footer.
